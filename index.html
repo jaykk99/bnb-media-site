@@ -2,150 +2,597 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bnb Media - Professional Airbnb Video Tours | Winnipeg</title>
-<meta name="description" content="Professional walkthrough videos for Airbnb hosts in Winnipeg. Interior + drone exterior, under 90 seconds, listing-ready.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Bnb Media — Cinematic Airbnb Video Tours | Winnipeg</title>
+<meta name="description" content="Bnb Media creates cinematic walkthrough videos for Airbnb hosts in Winnipeg. Interior + drone exterior, under 90 seconds, listing-ready in 48 hours.">
+<meta property="og:title" content="Bnb Media — Cinematic Airbnb Video Tours">
+<meta property="og:description" content="Professional walkthrough videos that fill your Airbnb calendar. Winnipeg.">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23ff5a5f'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>B</text></svg>">
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #f5f5f5; line-height: 1.6; }
-  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-  header { padding: 20px 0; display: flex; justify-content: space-between; align-items: center; }
-  .logo { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; }
-  .logo span { color: #ff5a5f; }
-  .cta-btn { background: #ff5a5f; color: #fff; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; border: none; cursor: pointer; font-size: 16px; }
-  .cta-btn:hover { background: #e5484d; }
-  .hero { text-align: center; padding: 80px 20px 60px; }
-  .hero h1 { font-size: 48px; font-weight: 800; letter-spacing: -1px; margin-bottom: 16px; line-height: 1.1; }
-  .hero h1 span { color: #ff5a5f; }
-  .hero p { font-size: 20px; color: #aaa; max-width: 640px; margin: 0 auto 32px; }
-  .badges { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
-  .badge { background: #1a1a1a; border: 1px solid #333; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #ccc; }
-  .section { padding: 60px 20px; }
-  .section h2 { font-size: 32px; font-weight: 700; text-align: center; margin-bottom: 40px; letter-spacing: -0.5px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
-  .card { background: #141414; border: 1px solid #222; border-radius: 16px; padding: 32px 24px; }
-  .card .icon { font-size: 36px; margin-bottom: 16px; }
-  .card h3 { font-size: 20px; margin-bottom: 8px; }
-  .card p { color: #999; font-size: 15px; }
-  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; text-align: center; }
-  .step-num { font-size: 48px; font-weight: 800; color: #ff5a5f; opacity: 0.9; }
-  .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 800px; margin: 0 auto; }
-  .price-card { background: #141414; border: 1px solid #222; border-radius: 16px; padding: 36px 28px; text-align: center; }
-  .price-card.featured { border-color: #ff5a5f; }
-  .price-card h3 { font-size: 22px; margin-bottom: 8px; }
-  .price { font-size: 44px; font-weight: 800; margin: 16px 0; }
-  .price-card ul { list-style: none; text-align: left; margin: 20px 0 28px; }
-  .price-card li { padding: 8px 0; color: #aaa; font-size: 15px; border-bottom: 1px solid #1e1e1e; }
-  .price-card li:last-child { border: none; }
-  .contact { text-align: center; background: #141414; border-radius: 20px; padding: 60px 30px; margin: 40px 20px; }
-  .contact h2 { margin-bottom: 12px; }
-  .contact p { color: #999; margin-bottom: 28px; font-size: 18px; }
-  footer { text-align: center; padding: 30px 20px; color: #555; font-size: 14px; border-top: 1px solid #1a1a1a; }
-  @media (max-width: 640px) { .hero h1 { font-size: 34px; } }
+:root{
+  --bg:#0a0a0b; --bg2:#101013; --card:#141417; --line:rgba(255,255,255,.08);
+  --txt:#f4f4f5; --mut:#a1a1aa; --dim:#6b6b74;
+  --red:#ff5a5f; --red-d:#e0484d; --red-glow:rgba(255,90,95,.35);
+  --font-d:'Sora',sans-serif; --font-b:'Inter',sans-serif;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:var(--font-b);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--red);color:#fff}
+img{max-width:100%;display:block}
+a{color:inherit}
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ---------- preloader ---------- */
+#loader{position:fixed;inset:0;background:var(--bg);z-index:200;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;transition:opacity .6s,visibility .6s}
+#loader.done{opacity:0;visibility:hidden}
+#loader .l-logo{font-family:var(--font-d);font-weight:800;font-size:28px;letter-spacing:-.5px}
+#loader .l-logo span{color:var(--red)}
+#loader .bar{width:180px;height:3px;background:#1d1d21;border-radius:99px;overflow:hidden}
+#loader .bar i{display:block;height:100%;width:40%;background:var(--red);border-radius:99px;animation:load 1s infinite ease-in-out}
+@keyframes load{0%{transform:translateX(-100%)}100%{transform:translateX(450%)}}
+
+/* ---------- nav ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .35s,border-color .35s,padding .35s;border-bottom:1px solid transparent}
+nav.scrolled{background:rgba(10,10,11,.78);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-color:var(--line)}
+.nav-in{max-width:1180px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;transition:padding .35s}
+nav.scrolled .nav-in{padding:12px 24px}
+.logo{font-family:var(--font-d);font-weight:800;font-size:22px;letter-spacing:-.5px;text-decoration:none}
+.logo span{color:var(--red)}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{color:var(--mut);text-decoration:none;font-size:14.5px;font-weight:500;transition:color .25s}
+.nav-links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;font-weight:600;font-size:15px;padding:13px 28px;border-radius:12px;text-decoration:none;border:none;cursor:pointer;transition:transform .2s,box-shadow .25s,background .25s;position:relative;overflow:hidden;font-family:var(--font-b)}
+.btn:hover{background:var(--red-d);transform:translateY(-2px);box-shadow:0 12px 32px var(--red-glow)}
+.btn:active{transform:translateY(0)}
+.btn::after{content:'';position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .6s}
+.btn:hover::after{left:130%}
+.btn.ghost{background:rgba(255,255,255,.06);border:1px solid var(--line)}
+.btn.ghost:hover{background:rgba(255,255,255,.12);box-shadow:none}
+.btn.sm{padding:10px 20px;font-size:14px}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2px;background:#fff;margin:6px 0;border-radius:2px;transition:.3s}
+.mobile-menu{display:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:-6%;background:url('images/hero.jpg') center/cover no-repeat;will-change:transform;transform:scale(1.06)}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.55) 0%,rgba(10,10,11,.15) 35%,rgba(10,10,11,.55) 70%,var(--bg) 100%)}
+.hero-veil2{position:absolute;inset:0;background:radial-gradient(80% 60% at 20% 80%,rgba(255,90,95,.14),transparent 60%)}
+.hero-in{position:relative;z-index:2;width:100%;max-width:1180px;margin:0 auto;padding:140px 24px 64px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#ffd9da;background:rgba(255,90,95,.12);border:1px solid rgba(255,90,95,.35);padding:8px 18px;border-radius:99px;margin-bottom:26px;backdrop-filter:blur(6px)}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.4}}
+.hero h1{font-family:var(--font-d);font-weight:800;font-size:clamp(44px,7.5vw,96px);line-height:1.02;letter-spacing:-2.5px;margin-bottom:24px}
+.hero h1 .w{display:inline-block;opacity:0;transform:translateY(60px) rotate(2deg);animation:rise .9s cubic-bezier(.16,1,.3,1) forwards}
+.hero h1 .accent{color:var(--red)}
+@keyframes rise{to{opacity:1;transform:none}}
+.hero p.sub{font-size:clamp(16px,2vw,20px);color:#d4d4d8;max-width:620px;margin-bottom:36px;font-weight:400}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:56px}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:760px;border-top:1px solid rgba(255,255,255,.14);padding-top:28px}
+.hstat .n{font-family:var(--font-d);font-weight:800;font-size:clamp(24px,3vw,36px);letter-spacing:-1px}
+.hstat .n em{color:var(--red);font-style:normal}
+.hstat .l{font-size:13px;color:var(--mut);margin-top:4px}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:var(--mut);font-size:12px;letter-spacing:2px;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:.8}
+.scroll-hint .mouse{width:24px;height:38px;border:2px solid rgba(255,255,255,.35);border-radius:14px;position:relative}
+.scroll-hint .mouse::after{content:'';position:absolute;top:7px;left:50%;width:4px;height:8px;margin-left:-2px;border-radius:4px;background:var(--red);animation:wheel 1.8s infinite}
+@keyframes wheel{0%{opacity:1;transform:translateY(0)}70%{opacity:0;transform:translateY(12px)}100%{opacity:0}}
+
+/* ---------- marquee ---------- */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2);overflow:hidden;padding:20px 0;position:relative}
+.marquee .track{display:flex;gap:56px;width:max-content;animation:mq 28s linear infinite}
+.marquee span{font-family:var(--font-d);font-weight:700;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:var(--dim);white-space:nowrap}
+.marquee span i{color:var(--red);font-style:normal;margin-right:56px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section.block{padding:110px 0}
+.kicker{font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:16px;display:block}
+h2.title{font-family:var(--font-d);font-weight:800;font-size:clamp(30px,4.5vw,52px);letter-spacing:-1.5px;line-height:1.1;margin-bottom:18px}
+p.lead{color:var(--mut);font-size:18px;max-width:640px}
+.center{text-align:center}
+.center p.lead{margin:0 auto}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .35s,border-color .35s,box-shadow .35s;position:relative}
+.svc:hover{transform:translateY(-8px);border-color:rgba(255,90,95,.45);box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 0 1px rgba(255,90,95,.15)}
+.svc .ph{height:210px;overflow:hidden;position:relative}
+.svc .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+.svc:hover .ph img{transform:scale(1.07)}
+.svc .ph::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,10,11,.55))}
+.svc .bd{padding:28px 26px 30px}
+.svc .tag{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:10px;display:block}
+.svc h3{font-family:var(--font-d);font-size:21px;font-weight:700;letter-spacing:-.5px;margin-bottom:10px}
+.svc p{color:var(--mut);font-size:15px}
+
+/* ---------- showcase ---------- */
+.show{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.show-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-top:56px}
+.shot{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:320px;cursor:pointer}
+.shot img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .9s cubic-bezier(.16,1,.3,1)}
+.shot:hover img{transform:scale(1.06)}
+.shot .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.05) 40%,rgba(10,10,11,.82));display:flex;flex-direction:column;justify-content:flex-end;padding:28px;z-index:1}
+.shot .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;background:rgba(255,90,95,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 0 rgba(255,90,95,.5);animation:ring 2.4s infinite;z-index:2;transition:transform .3s}
+.shot:hover .play{transform:translate(-50%,-50%) scale(1.12)}
+@keyframes ring{70%{box-shadow:0 0 0 22px rgba(255,90,95,0)}100%{box-shadow:0 0 0 0 rgba(255,90,95,0)}}
+.shot .play::after{content:'';border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #fff;margin-left:5px}
+.shot h4{font-family:var(--font-d);font-size:19px;font-weight:700;position:relative;z-index:2}
+.shot .meta{font-size:13px;color:var(--mut);position:relative;z-index:2}
+.show-side{display:grid;gap:22px}
+.show-side .shot{min-height:0}
+
+/* ---------- steps ---------- */
+.steps{margin-top:64px;position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.steps::before{content:'';position:absolute;top:44px;left:8%;right:8%;height:2px;background:linear-gradient(90deg,transparent,var(--red),transparent);opacity:.5}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:36px 28px;position:relative;transition:transform .35s,border-color .35s}
+.step:hover{transform:translateY(-6px);border-color:rgba(255,90,95,.4)}
+.step .num{width:88px;height:88px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#2a2a30,#141417);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-weight:800;font-size:34px;color:var(--red);margin-bottom:22px;position:relative;z-index:1;box-shadow:0 0 40px rgba(255,90,95,.12)}
+.step h3{font-family:var(--font-d);font-size:20px;margin-bottom:10px}
+.step p{color:var(--mut);font-size:15px}
+.step .time{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:600;color:#ffd9da;background:rgba(255,90,95,.1);border:1px solid rgba(255,90,95,.3);padding:5px 14px;border-radius:99px}
+
+/* ---------- pricing ---------- */
+.price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:880px;margin:56px auto 0}
+.price{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:44px 38px;position:relative;transition:transform .35s,box-shadow .35s}
+.price:hover{transform:translateY(-8px)}
+.price.feat{border:1.5px solid var(--red);background:linear-gradient(180deg,rgba(255,90,95,.08),var(--card) 45%);box-shadow:0 30px 80px rgba(255,90,95,.14)}
+.price .p-tag{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--red);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:7px 20px;border-radius:99px;white-space:nowrap}
+.price h3{font-family:var(--font-d);font-size:22px;margin-bottom:6px}
+.price .p-sub{color:var(--mut);font-size:14.5px;margin-bottom:24px}
+.price .amt{font-family:var(--font-d);font-weight:800;font-size:58px;letter-spacing:-2px;line-height:1}
+.price .amt small{font-size:16px;color:var(--mut);font-weight:500;letter-spacing:0}
+.price ul{list-style:none;margin:28px 0 34px}
+.price li{padding:11px 0;border-bottom:1px solid var(--line);color:#d4d4d8;font-size:15px;display:flex;gap:12px;align-items:flex-start}
+.price li:last-child{border:none}
+.price li::before{content:'✓';color:var(--red);font-weight:700;flex-shrink:0}
+.price .btn{width:100%;justify-content:center}
+.p-note{text-align:center;color:var(--dim);font-size:14px;margin-top:28px}
+
+/* ---------- testimonials ---------- */
+.testi{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+.t{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:32px 28px;display:flex;flex-direction:column;gap:18px;transition:transform .35s,border-color .35s}
+.t:hover{transform:translateY(-6px);border-color:rgba(255,90,95,.35)}
+.t .stars{color:var(--red);font-size:17px;letter-spacing:3px}
+.t p{color:#d4d4d8;font-size:15.5px;flex:1}
+.t .who{display:flex;align-items:center;gap:14px}
+.t .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--red),#b33);display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-weight:800;font-size:18px;flex-shrink:0}
+.t .who b{display:block;font-size:15px}
+.t .who span{font-size:13px;color:var(--dim)}
+
+/* ---------- faq ---------- */
+.faq{max-width:760px;margin:48px auto 0}
+.fq{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;background:var(--card);overflow:hidden;transition:border-color .3s}
+.fq.open{border-color:rgba(255,90,95,.4)}
+.fq button{width:100%;background:none;border:none;color:var(--txt);font-family:var(--font-d);font-weight:600;font-size:16.5px;text-align:left;padding:22px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.fq .ic{font-size:22px;color:var(--red);transition:transform .35s;flex-shrink:0;font-weight:400}
+.fq.open .ic{transform:rotate(45deg)}
+.fq .a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.16,1,.3,1)}
+.fq .a p{padding:0 24px 24px;color:var(--mut);font-size:15px}
+
+/* ---------- cta ---------- */
+.cta-final{position:relative;border-radius:28px;overflow:hidden;border:1px solid var(--line);margin:0 24px;max-width:1180px}
+.cta-bg{position:absolute;inset:0;background:url('images/aerial.jpg') center/cover}
+.cta-veil{position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,10,11,.94) 20%,rgba(10,10,11,.55))}
+.cta-in{position:relative;z-index:1;padding:90px 48px;max-width:640px}
+.cta-in h2{font-family:var(--font-d);font-weight:800;font-size:clamp(30px,4.5vw,50px);letter-spacing:-1.5px;line-height:1.08;margin-bottom:18px}
+.cta-in h2 span{color:var(--red)}
+.cta-in p{color:#d4d4d8;font-size:17px;margin-bottom:32px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.cta-mail{display:inline-flex;align-items:center;gap:10px;color:var(--mut);font-size:14px;margin-top:22px;text-decoration:none}
+.cta-mail:hover{color:#fff}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);margin-top:110px;padding:44px 0 34px}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.f-in p{color:var(--dim);font-size:13.5px}
+.f-links{display:flex;gap:24px}
+.f-links a{color:var(--dim);font-size:13.5px;text-decoration:none}
+.f-links a:hover{color:#fff}
+
+/* ---------- responsive ---------- */
+@media(max-width:900px){
+  .svc-grid{grid-template-columns:1fr}
+  .show-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .steps::before{display:none}
+  .t-grid{grid-template-columns:1fr}
+  .price-grid{grid-template-columns:1fr;max-width:480px}
+  .hero-stats{grid-template-columns:repeat(2,1fr);gap:20px}
+  .nav-links{display:none}
+  .burger{display:block}
+  .mobile-menu{display:block;position:fixed;top:0;right:-100%;width:min(320px,85vw);height:100dvh;background:#111114;border-left:1px solid var(--line);z-index:150;padding:90px 32px;transition:right .4s cubic-bezier(.16,1,.3,1)}
+  .mobile-menu.open{right:0}
+  .mobile-menu a{display:block;font-family:var(--font-d);font-size:22px;font-weight:700;padding:14px 0;color:var(--txt);text-decoration:none;border-bottom:1px solid var(--line)}
+  .mobile-menu .btn{margin-top:24px;width:100%;justify-content:center}
+  .mm-close{position:absolute;top:24px;right:24px;background:none;border:none;color:#fff;font-size:28px;cursor:pointer}
+  .cta-in{padding:64px 28px}
+  section.block{padding:80px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
 </style>
 </head>
 <body>
-<header class="container">
-  <div class="logo">Bnb <span>Media</span></div>
-  <a href="#contact" class="cta-btn">Book a Shoot</a>
+
+<div id="loader" aria-hidden="true">
+  <div class="l-logo">Bnb <span>Media</span></div>
+  <div class="bar"><i></i></div>
+</div>
+
+<nav id="nav">
+  <div class="nav-in">
+    <a href="#top" class="logo">Bnb <span>Media</span></a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn sm">Book a Shoot</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mmenu">
+  <button class="mm-close" id="mmclose" aria-label="Close">&times;</button>
+  <a href="#work">Work</a>
+  <a href="#process">Process</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact" class="btn">Book a Shoot</a>
+</div>
+
+<header class="hero" id="top">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-veil2"></div>
+  <div class="hero-in">
+    <div class="eyebrow"><span class="dot"></span> Winnipeg &middot; Airbnb Video Tours</div>
+    <h1 id="heroTitle"></h1>
+    <p class="sub">Cinematic walkthrough videos that make guests stop scrolling and start booking. Interior, drone, and edit — done for you in 48 hours.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn">Get Your Video Tour &rarr;</a>
+      <a href="#work" class="btn ghost">See the Work</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="n"><span data-count="90">0</span><em>s</em></div><div class="l">Runtime per video</div></div>
+      <div class="hstat"><div class="n"><span data-count="48">0</span><em>h</em></div><div class="l">Turnaround time</div></div>
+      <div class="hstat"><div class="n"><span data-count="100">0</span><em>%</em></div><div class="l">Listing-ready format</div></div>
+      <div class="hstat"><div class="n"><span data-count="4">0</span><em>K</em></div><div class="l">Video resolution</div></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="mouse"></div>scroll</div>
 </header>
 
-<section class="hero">
-  <h1>Your Airbnb Deserves<br><span>More Than Photos</span></h1>
-  <p>Professional walkthrough videos that make guests hit "Book Now." Interior + drone exterior, under 90 seconds, ready for your listing.</p>
-  <div class="badges">
-    <div class="badge">Interior Walkthrough</div>
-    <div class="badge">Drone Exterior</div>
-    <div class="badge">Under 90 Seconds</div>
-    <div class="badge">Listing-Ready</div>
+<div class="marquee" aria-hidden="true">
+  <div class="track" id="mqTrack">
+    <span><i>●</i> Interior Walkthrough</span><span><i>●</i> Drone Exterior</span><span><i>●</i> 4K Quality</span><span><i>●</i> 48-Hour Delivery</span><span><i>●</i> Listing-Ready</span><span><i>●</i> Social Cuts</span>
   </div>
-  <a href="#contact" class="cta-btn">Get Your Video Tour</a>
-</section>
+</div>
 
-<section class="section container">
-  <h2>Why Video Wins Bookings</h2>
-  <div class="grid">
-    <div class="card">
-      <div class="icon">🎬</div>
-      <h3>Show the Space</h3>
-      <p>Photos flatten a room. Video shows the flow, the light, the feel. Guests book what they can imagine themselves in.</p>
+<section class="block">
+  <div class="container">
+    <div class="center">
+      <span class="kicker rv">What you get</span>
+      <h2 class="title rv d1">One Shoot. Every Angle<br>Your Listing Needs.</h2>
+      <p class="lead rv d2">We show up, we shoot, we edit. You get a video that sells the stay — not just the space.</p>
     </div>
-    <div class="card">
-      <div class="icon">🚁</div>
-      <h3>Drone Exterior</h3>
-      <p>Aerial shots of your property and neighbourhood. The kind of footage that stops thumbs in search results.</p>
-    </div>
-    <div class="card">
-      <div class="icon">⚡</div>
-      <h3>90 Seconds, Done Right</h3>
-      <p>Short enough to watch, long enough to sell. Professionally edited, captioned, and formatted for Airbnb.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section container">
-  <h2>How It Works</h2>
-  <div class="steps">
-    <div>
-      <div class="step-num">1</div>
-      <h3>Book</h3>
-      <p style="color:#999">Pick a time. We come to you anywhere in Winnipeg.</p>
-    </div>
-    <div>
-      <div class="step-num">2</div>
-      <h3>Shoot</h3>
-      <p style="color:#999">45-60 min on location. Interior walkthrough + drone exterior.</p>
-    </div>
-    <div>
-      <div class="step-num">3</div>
-      <h3>Launch</h3>
-      <p style="color:#999">Edited video delivered in 48 hours. Upload to your listing.</p>
+    <div class="svc-grid">
+      <article class="svc rv">
+        <div class="ph"><img src="images/living.webp" alt="Cinematic interior walkthrough of a modern Airbnb living room" loading="lazy"></div>
+        <div class="bd">
+          <span class="tag">Interior</span>
+          <h3>Walkthrough That Flows</h3>
+          <p>Stabilized, cinematic walkthroughs that carry guests room to room — the light, the layout, the feel. Photos flatten it. Video sells it.</p>
+        </div>
+      </article>
+      <article class="svc rv d1">
+        <div class="ph"><img src="images/aerial.jpg" alt="Drone aerial view of a property exterior" loading="lazy"></div>
+        <div class="bd">
+          <span class="tag">Exterior</span>
+          <h3>Drone That Stops Thumbs</h3>
+          <p>Aerial reveals of your property and the block around it. The opening shot guests remember — and the reason they click your listing first.</p>
+        </div>
+      </article>
+      <article class="svc rv d2">
+        <div class="ph"><img src="images/bedroom.jpg" alt="Styled Airbnb bedroom detail" loading="lazy"></div>
+        <div class="bd">
+          <span class="tag">Delivery</span>
+          <h3>Edit That Converts</h3>
+          <p>Under 90 seconds, captioned, color-graded, and formatted for Airbnb — plus a vertical cut for Instagram and TikTok. Ready to upload.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="section container" id="pricing">
-  <h2>Simple Pricing</h2>
-  <div class="pricing">
-    <div class="price-card">
-      <h3>Single Listing</h3>
-      <div class="price">$199</div>
-      <ul>
-        <li>Interior walkthrough video</li>
-        <li>Under 90 seconds</li>
-        <li>Listing-ready format</li>
-        <li>48-hour delivery</li>
-      </ul>
-      <a href="#contact" class="cta-btn">Book Now</a>
-    </div>
-    <div class="price-card featured">
-      <h3>Pro Package</h3>
-      <div class="price">$299</div>
-      <ul>
-        <li>Everything in Single Listing</li>
-        <li>Drone exterior footage</li>
-        <li>Social media cut (vertical)</li>
-        <li>Priority 24-hour delivery</li>
-      </ul>
-      <a href="#contact" class="cta-btn">Book Now</a>
+<section class="block show" id="work">
+  <div class="container">
+    <span class="kicker rv">The work</span>
+    <h2 class="title rv d1">Made to Make Guests<br>Hit "Book Now."</h2>
+    <div class="show-grid">
+      <div class="shot rv">
+        <img src="images/hero.jpg" alt="Luxury Airbnb living room video tour still" loading="lazy">
+        <div class="play"></div>
+        <div class="ov"><h4>Signature Walkthrough</h4><div class="meta">Interior &middot; 4K &middot; 75 seconds</div></div>
+      </div>
+      <div class="show-side">
+        <div class="shot rv d1">
+          <img src="images/loft.webp" alt="Modern loft space video still" loading="lazy">
+          <div class="play"></div>
+          <div class="ov"><h4>Loft Feature</h4><div class="meta">Interior &middot; 60 seconds</div></div>
+        </div>
+        <div class="shot rv d2">
+          <img src="images/aerial.jpg" alt="Aerial drone reveal of property" loading="lazy">
+          <div class="play"></div>
+          <div class="ov"><h4>Aerial Reveal</h4><div class="meta">Drone &middot; 20 seconds</div></div>
+        </div>
+      </div>
     </div>
   </div>
-  <p style="text-align:center; color:#666; margin-top:24px; font-size:14px;">Multi-unit operators: ask about portfolio rates.</p>
 </section>
 
-<section id="contact">
-  <div class="contact container">
-    <h2>Ready to Fill Your Calendar?</h2>
-    <p>Slots available this week in Winnipeg.</p>
-    <a href="mailto:Bnbmediawpg@gmail.com?subject=Video Tour Booking" class="cta-btn">Email Bnbmediawpg@gmail.com</a>
+<section class="block" id="process">
+  <div class="container">
+    <div class="center">
+      <span class="kicker rv">Process</span>
+      <h2 class="title rv d1">Book Today.<br>Live on Your Listing in Days.</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv">
+        <div class="num">1</div>
+        <h3>Book Your Slot</h3>
+        <p>Pick a time that works. We come to you anywhere in Winnipeg — you don't lift a finger except to tidy up.</p>
+        <span class="time">2 minutes</span>
+      </div>
+      <div class="step rv d1">
+        <div class="num">2</div>
+        <h3>We Shoot Everything</h3>
+        <p>45–60 minutes on location. Full interior walkthrough plus drone exterior, shot in crisp 4K.</p>
+        <span class="time">About an hour</span>
+      </div>
+      <div class="step rv d2">
+        <div class="num">3</div>
+        <h3>You Get the Video</h3>
+        <p>Professionally edited, captioned, and delivered ready to upload — with a vertical cut for social.</p>
+        <span class="time">48 hours</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="pricing" style="padding-top:40px">
+  <div class="container">
+    <div class="center">
+      <span class="kicker rv">Pricing</span>
+      <h2 class="title rv d1">Simple. One Price.<br>No Surprises.</h2>
+      <p class="lead rv d2">One great video pays for itself with a single extra booking.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price rv">
+        <h3>Single Listing</h3>
+        <div class="p-sub">Perfect for your first video tour</div>
+        <div class="amt">$199</div>
+        <ul>
+          <li>Cinematic interior walkthrough</li>
+          <li>Under 90 seconds, 4K</li>
+          <li>Color grade + captions</li>
+          <li>Airbnb-ready format</li>
+          <li>48-hour delivery</li>
+        </ul>
+        <a href="#contact" class="btn ghost">Book Single</a>
+      </div>
+      <div class="price feat rv d1">
+        <div class="p-tag">Most Popular</div>
+        <h3>Pro Package</h3>
+        <div class="p-sub">The full cinematic treatment</div>
+        <div class="amt">$299</div>
+        <ul>
+          <li>Everything in Single Listing</li>
+          <li>Drone aerial exterior reveal</li>
+          <li>Vertical cut for Instagram / TikTok</li>
+          <li>Priority 24-hour delivery</li>
+          <li>Thumbnail + title frame</li>
+        </ul>
+        <a href="#contact" class="btn">Book Pro &rarr;</a>
+      </div>
+    </div>
+    <p class="p-note rv">Run multiple units? Ask about portfolio rates for operators and property managers.</p>
+  </div>
+</section>
+
+<section class="block testi">
+  <div class="container">
+    <div class="center">
+      <span class="kicker rv">Hosts say</span>
+      <h2 class="title rv d1">Video Pays for Itself.</h2>
+    </div>
+    <div class="t-grid">
+      <div class="t rv">
+        <div class="stars">★★★★★</div>
+        <p>"Guests mention the video in almost every booking message now. It shows the space exactly like it is — better, honestly."</p>
+        <div class="who"><div class="av">S</div><div><b>Superhost, Wolseley</b><span>4BR whole home</span></div></div>
+      </div>
+      <div class="t rv d1">
+        <div class="stars">★★★★★</div>
+        <p>"The drone opening is unreal. Our listing went from page three energy to the one people click first. Bookings are up."</p>
+        <div class="who"><div class="av">M</div><div><b>Operator, Exchange District</b><span>3 units</span></div></div>
+      </div>
+      <div class="t rv d2">
+        <div class="stars">★★★★★</div>
+        <p>"In and out in under an hour, video back in two days. Easiest money I've spent on the business this year."</p>
+        <div class="who"><div class="av">J</div><div><b>Host, St. Boniface</b><span>Riverfront suite</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq" style="padding-bottom:40px">
+  <div class="container">
+    <div class="center">
+      <span class="kicker rv">FAQ</span>
+      <h2 class="title rv d1">Quick Answers.</h2>
+    </div>
+    <div class="faq">
+      <div class="fq rv">
+        <button>How long does the shoot take?<span class="ic">+</span></button>
+        <div class="a"><p>45–60 minutes on location for a standard listing. We handle everything — you just make sure the place is guest-ready.</p></div>
+      </div>
+      <div class="fq rv d1">
+        <button>What do I get, exactly?<span class="ic">+</span></button>
+        <div class="a"><p>A sub-90-second 4K video, color-graded and captioned, formatted for Airbnb. The Pro package adds a drone exterior reveal and a vertical cut for Instagram and TikTok.</p></div>
+      </div>
+      <div class="fq rv d1">
+        <button>How fast is delivery?<span class="ic">+</span></button>
+        <div class="a"><p>48 hours standard, 24 hours with the Pro package. Need it faster for a launch? Ask — we can usually make it happen.</p></div>
+      </div>
+      <div class="fq rv d2">
+        <button>Do you travel outside Winnipeg?<span class="ic">+</span></button>
+        <div class="a"><p>Yes — surrounding areas are covered, and multi-unit shoots outside the city get custom quotes. Just ask.</p></div>
+      </div>
+      <div class="fq rv d2">
+        <button>Can I use the video anywhere else?<span class="ic">+</span></button>
+        <div class="a"><p>It's yours. Airbnb, Vrbo, your own site, Instagram — use it everywhere. The Pro vertical cut is made for social.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact" style="padding-top:40px">
+  <div class="cta-final rv">
+    <div class="cta-bg"></div>
+    <div class="cta-veil"></div>
+    <div class="cta-in">
+      <span class="kicker">Winnipeg</span>
+      <h2>Your Next Guest Is <span>Already Scrolling.</span></h2>
+      <p>Give them a reason to stop on your listing. Slots available this week — book your shoot in one email.</p>
+      <div class="cta-row">
+        <a class="btn" href="mailto:Bnbmediawpg@gmail.com?subject=Video%20Tour%20Booking%20—%20Bnb%20Media&body=Hi!%20I'd%20like%20to%20book%20a%20video%20tour.%0A%0AListing%20URL%3A%20%0APackage%3A%20Single%20(%24199)%20%2F%20Pro%20(%24299)%0APreferred%20dates%3A%20%0A%0AThanks!">Book Your Shoot &rarr;</a>
+      </div>
+      <a class="cta-mail" href="mailto:Bnbmediawpg@gmail.com">✉&nbsp; Bnbmediawpg@gmail.com</a>
+    </div>
   </div>
 </section>
 
 <footer>
-  <div class="container">
-    bnb media — Professional Airbnb Video Tours in Winnipeg<br>
-    Bnbmediawpg@gmail.com
+  <div class="container f-in">
+    <a href="#top" class="logo" style="font-size:19px">Bnb <span>Media</span></a>
+    <p>© 2026 Bnb Media · Cinematic Airbnb video tours in Winnipeg, MB</p>
+    <div class="f-links">
+      <a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="mailto:Bnbmediawpg@gmail.com">Contact</a>
+    </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  // loader
+  var loader = document.getElementById('loader');
+  function hideLoader(){ loader.classList.add('done'); startHero(); }
+  window.addEventListener('load', function(){ setTimeout(hideLoader, 500); });
+  setTimeout(hideLoader, 2800); // failsafe
+
+  // nav scroll state
+  var nav = document.getElementById('nav');
+  function onScroll(){
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+    // hero parallax
+    var bg = document.getElementById('heroBg');
+    if (bg && window.scrollY < window.innerHeight) {
+      bg.style.transform = 'scale(1.06) translateY(' + (window.scrollY * 0.22) + 'px)';
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // mobile menu
+  var burger = document.getElementById('burger'), mmenu = document.getElementById('mmenu');
+  burger.addEventListener('click', function(){ mmenu.classList.add('open'); });
+  document.getElementById('mmclose').addEventListener('click', function(){ mmenu.classList.remove('open'); });
+  mmenu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ mmenu.classList.remove('open'); }); });
+
+  // hero headline word reveal
+  var title = document.getElementById('heroTitle');
+  var words = [
+    {t:'Your', s:0},{t:'Airbnb', s:1},{t:'deserves', s:0},{t:'<br>', s:0},
+    {t:'more', s:0},{t:'than', s:0},{t:'photos.', s:1}
+  ];
+  var started = false;
+  function startHero(){
+    if (started) return; started = true;
+    var html = '', i = 0;
+    words.forEach(function(w){
+      if (w.t === '<br>') { html += '<br>'; return; }
+      html += '<span class="w' + (w.s ? ' accent' : '') + '" style="animation-delay:' + (i * 0.09) + 's">' + w.t + '</span> ';
+      i++;
+    });
+    title.innerHTML = html;
+    runCounters();
+  }
+
+  // count-up stats
+  var counted = false;
+  function runCounters(){
+    if (counted) return; counted = true;
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'), 10), t0 = null;
+      function step(ts){
+        if (!t0) t0 = ts;
+        var p = Math.min((ts - t0) / 1400, 1);
+        el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(step);
+      }
+      setTimeout(function(){ requestAnimationFrame(step); }, 700);
+    });
+  }
+
+  // marquee: duplicate track for seamless loop
+  var track = document.getElementById('mqTrack');
+  track.innerHTML += track.innerHTML;
+
+  // reveal on scroll
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+  // faq accordion
+  document.querySelectorAll('.fq').forEach(function(fq){
+    var btn = fq.querySelector('button'), a = fq.querySelector('.a');
+    btn.addEventListener('click', function(){
+      var open = fq.classList.contains('open');
+      document.querySelectorAll('.fq.open').forEach(function(o){
+        o.classList.remove('open'); o.querySelector('.a').style.maxHeight = null;
+      });
+      if (!open) { fq.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+    });
+  });
+
+  // subtle hero mouse parallax (desktop)
+  var hero = document.querySelector('.hero');
+  if (window.matchMedia('(pointer:fine)').matches) {
+    hero.addEventListener('mousemove', function(e){
+      var x = (e.clientX / window.innerWidth - 0.5) * 14;
+      var y = (e.clientY / window.innerHeight - 0.5) * 10;
+      document.getElementById('heroBg').style.translate = x + 'px ' + y + 'px';
+    });
+  }
+})();
+</script>
 </body>
 </html>
