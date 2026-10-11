@@ -5,9 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Bnb Media — Cinematic Airbnb Video Tours | Winnipeg</title>
 <meta name="description" content="Bnb Media creates cinematic walkthrough videos for Airbnb hosts in Winnipeg. Interior + drone exterior, under 90 seconds, listing-ready in 48 hours.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jaykk99.github.io/bnb-media-site/">
 <meta property="og:title" content="Bnb Media — Cinematic Airbnb Video Tours">
 <meta property="og:description" content="Professional walkthrough videos that fill your Airbnb calendar. Winnipeg.">
-<meta property="og:image" content="images/hero.jpg">
+<meta property="og:image" content="https://jaykk99.github.io/bnb-media-site/images/hero.jpg">
+<meta property="og:image:alt" content="Luxury Airbnb living room filmed by Bnb Media">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bnb Media — Cinematic Airbnb Video Tours">
+<meta name="twitter:description" content="Professional walkthrough videos that fill your Airbnb calendar. Winnipeg.">
+<meta name="twitter:image" content="https://jaykk99.github.io/bnb-media-site/images/hero.jpg">
+<meta name="theme-color" content="#0a0a0a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -182,7 +190,7 @@ p.lead{color:var(--mut);font-size:18px;max-width:640px}
 .fq .a p{padding:0 24px 24px;color:var(--mut);font-size:15px}
 
 /* ---------- cta ---------- */
-.cta-final{position:relative;border-radius:28px;overflow:hidden;border:1px solid var(--line);margin:0 24px;max-width:1180px}
+.cta-final{position:relative;border-radius:28px;overflow:hidden;border:1px solid var(--line);margin:0 auto;max-width:1180px;width:calc(100% - 48px)}
 .cta-bg{position:absolute;inset:0;background:url('images/aerial.jpg') center/cover}
 .cta-veil{position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,10,11,.94) 20%,rgba(10,10,11,.55))}
 .cta-in{position:relative;z-index:1;padding:90px 48px;max-width:640px}
@@ -243,7 +251,7 @@ footer{border-top:1px solid var(--line);margin-top:110px;padding:44px 0 34px}
       <a href="#faq">FAQ</a>
       <a href="#contact" class="btn sm">Book a Shoot</a>
     </div>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mmenu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
@@ -262,7 +270,7 @@ footer{border-top:1px solid var(--line);margin-top:110px;padding:44px 0 34px}
   <div class="hero-veil2"></div>
   <div class="hero-in">
     <div class="eyebrow"><span class="dot"></span> Winnipeg &middot; Airbnb Video Tours</div>
-    <h1 id="heroTitle"></h1>
+    <h1 id="heroTitle">Your Airbnb deserves more than photos.</h1>
     <p class="sub">Cinematic walkthrough videos that make guests stop scrolling and start booking. Interior, drone, and edit — done for you in 48 hours.</p>
     <div class="hero-cta">
       <a href="#contact" class="btn">Get Your Video Tour &rarr;</a>
@@ -449,23 +457,23 @@ footer{border-top:1px solid var(--line);margin-top:110px;padding:44px 0 34px}
     </div>
     <div class="faq">
       <div class="fq rv">
-        <button>How long does the shoot take?<span class="ic">+</span></button>
+        <button aria-expanded="false">How long does the shoot take?<span class="ic">+</span></button>
         <div class="a"><p>45–60 minutes on location for a standard listing. We handle everything — you just make sure the place is guest-ready.</p></div>
       </div>
       <div class="fq rv d1">
-        <button>What do I get, exactly?<span class="ic">+</span></button>
+        <button aria-expanded="false">What do I get, exactly?<span class="ic">+</span></button>
         <div class="a"><p>A sub-90-second 4K video, color-graded and captioned, formatted for Airbnb. The Pro package adds a drone exterior reveal and a vertical cut for Instagram and TikTok.</p></div>
       </div>
       <div class="fq rv d1">
-        <button>How fast is delivery?<span class="ic">+</span></button>
+        <button aria-expanded="false">How fast is delivery?<span class="ic">+</span></button>
         <div class="a"><p>48 hours standard, 24 hours with the Pro package. Need it faster for a launch? Ask — we can usually make it happen.</p></div>
       </div>
       <div class="fq rv d2">
-        <button>Do you travel outside Winnipeg?<span class="ic">+</span></button>
+        <button aria-expanded="false">Do you travel outside Winnipeg?<span class="ic">+</span></button>
         <div class="a"><p>Yes — surrounding areas are covered, and multi-unit shoots outside the city get custom quotes. Just ask.</p></div>
       </div>
       <div class="fq rv d2">
-        <button>Can I use the video anywhere else?<span class="ic">+</span></button>
+        <button aria-expanded="false">Can I use the video anywhere else?<span class="ic">+</span></button>
         <div class="a"><p>It's yours. Airbnb, Vrbo, your own site, Instagram — use it everywhere. The Pro vertical cut is made for social.</p></div>
       </div>
     </div>
@@ -520,9 +528,9 @@ footer{border-top:1px solid var(--line);margin-top:110px;padding:44px 0 34px}
 
   // mobile menu
   var burger = document.getElementById('burger'), mmenu = document.getElementById('mmenu');
-  burger.addEventListener('click', function(){ mmenu.classList.add('open'); });
-  document.getElementById('mmclose').addEventListener('click', function(){ mmenu.classList.remove('open'); });
-  mmenu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ mmenu.classList.remove('open'); }); });
+  burger.addEventListener('click', function(){ mmenu.classList.add('open'); burger.setAttribute('aria-expanded','true'); });
+  document.getElementById('mmclose').addEventListener('click', function(){ mmenu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
+  mmenu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ mmenu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }); });
 
   // hero headline word reveal
   var title = document.getElementById('heroTitle');
@@ -578,8 +586,9 @@ footer{border-top:1px solid var(--line);margin-top:110px;padding:44px 0 34px}
       var open = fq.classList.contains('open');
       document.querySelectorAll('.fq.open').forEach(function(o){
         o.classList.remove('open'); o.querySelector('.a').style.maxHeight = null;
+        o.querySelector('button').setAttribute('aria-expanded','false');
       });
-      if (!open) { fq.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+      if (!open) { fq.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; btn.setAttribute('aria-expanded','true'); }
     });
   });
 
