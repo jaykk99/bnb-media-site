@@ -2,7 +2,7 @@
 
 The business website for **Bnb Media**, cinematic walkthrough videos for Airbnb hosts in Winnipeg. Interior plus drone exterior, under 90 seconds, listing-ready in 48 hours.
 
-Live: https://jaykk99.github.io/bnb-media-site/
+Live: https://bnb-media.onrender.com/
 
 ## Stack
 
