@@ -1,0 +1,9 @@
+# Cloudflare Pages config — Bnb Media site. PREPARED 2026-10-29, not yet
+# connected. To go live on Cloudflare: Workers & Pages -> Create -> Pages
+# -> Connect to Git -> pick this repo, production branch "main", no build
+# command, output dir ".". That creates bnb-media-site.pages.dev as an
+# ADDITIONAL home; it does not change the current live site
+# (jaykk99.github.io/bnb-media-site). Pure static: no database wiring.
+name = "bnb-media-site"
+pages_build_output_dir = "."
+compatibility_date = "2026-10-29"
